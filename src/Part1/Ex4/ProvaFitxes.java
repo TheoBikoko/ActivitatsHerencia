@@ -1,6 +1,6 @@
 package Part1.Ex4;
 
-import Part1.Ex4.Biblioteca.*;
+import Part1.Ex4.biblioteca.*;
 
 public class ProvaFitxes {
     public static void main(String[] args) {

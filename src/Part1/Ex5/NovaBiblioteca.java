@@ -1,9 +1,9 @@
 package Part1.Ex5;
 
-import Part1.Ex4.Biblioteca.Fitxa;
-import Part1.Ex4.Biblioteca.Obra;
-import Part1.Ex4.Biblioteca.Revista;
-import Part1.Ex4.Biblioteca.Volum;
+import Part1.Ex4.biblioteca.Fitxa;
+import Part1.Ex4.biblioteca.Obra;
+import Part1.Ex4.biblioteca.Revista;
+import Part1.Ex4.biblioteca.Volum;
 
 public class NovaBiblioteca {
 

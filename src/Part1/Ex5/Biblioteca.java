@@ -1,6 +1,6 @@
 package Part1.Ex5;
 
-import Part1.Ex4.Biblioteca.Fitxa;
+import Part1.Ex4.biblioteca.Fitxa;
 
 import java.util.ArrayList;
 

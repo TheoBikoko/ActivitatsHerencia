@@ -1,4 +1,4 @@
-package Part1.Ex6.Classes;
+package Part1.Ex6.classes;
 
 public class Repartidor extends Empleat {
     private String zona;

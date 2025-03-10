@@ -1,8 +1,8 @@
 package Part1.Ex6;
 
-import Part1.Ex6.Classes.Comercial;
-import Part1.Ex6.Classes.Empleat;
-import Part1.Ex6.Classes.Repartidor;
+import Part1.Ex6.classes.Comercial;
+import Part1.Ex6.classes.Empleat;
+import Part1.Ex6.classes.Repartidor;
 
 public class TestClasses {
     public static void main(String[] args) {

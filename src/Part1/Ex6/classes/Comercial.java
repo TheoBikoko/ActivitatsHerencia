@@ -1,4 +1,4 @@
-package Part1.Ex6.Classes;
+package Part1.Ex6.classes;
 
 public class Comercial extends Empleat {
     private float comissio;

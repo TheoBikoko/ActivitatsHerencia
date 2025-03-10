@@ -1,13 +1,23 @@
-package Part1.Ex4.Biblioteca;
+package Part1.Ex4.biblioteca;
 
 import java.util.Objects;
 
-public final class Volum extends Obra{
+public final class Revista extends Fitxa{
+    private short any;
     private short nro;
 
-    public Volum(String referencia, String titol, String autor, short nrePags, short nro) {
-        super(referencia, titol, autor, nrePags);
+    public Revista (String referencia, String titol, short any, short nro){
+        super(referencia, titol);
+        this.any = any;
         this.nro = nro;
+    }
+
+    public short getAny() {
+        return any;
+    }
+
+    public void setAny(short any) {
+        this.any = any;
     }
 
     public short getNro() {
@@ -20,11 +30,10 @@ public final class Volum extends Obra{
 
     @Override
     public String toString() {
-        return "Volum{" +
+        return "Revista{" +
                 "referencia='" + referencia + '\'' +
                 ", titol='" + titol + '\'' +
-                ", autor='" + autor + '\'' +
-                ", nrePags=" + nrePags +
+                ". any=" + any +
                 ", nro=" + nro +
                 '}';
     }
@@ -33,12 +42,12 @@ public final class Volum extends Obra{
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         if (!super.equals(o)) return false;
-        Volum volum = (Volum) o;
-        return nro == volum.nro;
+        Revista revista = (Revista) o;
+        return any == revista.any && nro == revista.nro;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(super.hashCode(), nro);
+        return Objects.hash(super.hashCode(), any, nro);
     }
 }
