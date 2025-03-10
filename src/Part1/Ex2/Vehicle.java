@@ -10,4 +10,9 @@ public sealed class Vehicle permits Cotxe, Camio, FurgonetaDeCarrega, Microbus{
     public Double preuLloguer(int dies){
         return 10.0*dies;
     }
+
+
+    public String getMatricula() {
+        return matricula;
+    }
 }
