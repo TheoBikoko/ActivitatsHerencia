@@ -12,7 +12,7 @@ public class Gimnas extends Espai{
 
     @Override
     public double ConsumPerMetreQuadrat(){
-        return consumElectric*superficie;
+        return consumElectric/superficie;
     }
 
     @Override
