@@ -13,11 +13,9 @@ public abstract class Espai {
         this.consumElectric = consumElectric;
     }
 
-    protected double ConsumPerMetreQuadrat(){
-        return consumElectric*superficie;
-    };
+    protected abstract double ConsumPerMetreQuadrat();
 
-    protected abstract double espaiUtil();
+    protected abstract double espaiPerEstudiant(int nombreAlumnes);
 
     public int getId() {
         return id;

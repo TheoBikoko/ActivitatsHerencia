@@ -10,6 +10,16 @@ public class Gimnas extends Espai{
         this.nombreGrades = nombreGrades;
     }
 
+    @Override
+    public double ConsumPerMetreQuadrat(){
+        return consumElectric*superficie;
+    }
+
+    @Override
+    public double espaiPerEstudiant(int nombreAlumnes) {
+        return superficie/nombreAlumnes - nombreGrades;
+    }
+
     public boolean isTeDutxes() {
         return teDutxes;
     }

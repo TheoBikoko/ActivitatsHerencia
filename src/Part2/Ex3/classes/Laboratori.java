@@ -12,8 +12,19 @@ public class Laboratori extends Espai{
         return nombreEncenedorsBunsen;
     }
 
+
     public void setNombreEncenedorsBunsen(int nombreEncenedorsBunsen) {
         this.nombreEncenedorsBunsen = nombreEncenedorsBunsen;
+    }
+
+    @Override
+    public double ConsumPerMetreQuadrat(){
+        return consumElectric*superficie;
+    }
+
+    @Override
+    public double espaiPerEstudiant(int nombreAlumnes) {
+        return superficie/nombreAlumnes;
     }
 
     @Override

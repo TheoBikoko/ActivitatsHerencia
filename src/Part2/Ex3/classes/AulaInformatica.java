@@ -8,8 +8,14 @@ public class AulaInformatica extends Espai{
         this.nombreImpressores = nombreImpressores;
     }
 
-    public double espaiUtil(){
-        return superficie - nombreImpressores;
+    @Override
+    public double ConsumPerMetreQuadrat(){
+        return consumElectric*superficie;
+    }
+
+    @Override
+    public double espaiPerEstudiant(int nombreAlumnes) {
+        return superficie/nombreAlumnes - nombreImpressores;
     }
 
     public int getNombreImpressores() {

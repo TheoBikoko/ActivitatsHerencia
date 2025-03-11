@@ -14,7 +14,15 @@ public class Aula extends Espai{
         this.teConnectorsDeXarxa = teConnectorsDeXarxa;
     }
 
+    @Override
+    public double ConsumPerMetreQuadrat(){
+        return consumElectric*superficie;
+    }
 
+    @Override
+    public double espaiPerEstudiant(int nombreAlumnes) {
+        return superficie/nombreAlumnes;
+    }
 
     public int getAforamentMaxim() {
         return aforamentMaxim;

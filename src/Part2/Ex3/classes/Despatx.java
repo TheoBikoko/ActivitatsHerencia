@@ -10,6 +10,16 @@ public class Despatx extends Espai{
         this.disposaDeMaquinaDeCafe = disposaDeMaquinaDeCafe;
     }
 
+    @Override
+    public double ConsumPerMetreQuadrat(){
+        return consumElectric*superficie;
+    }
+
+    @Override
+    public double espaiPerEstudiant(int nombreAlumnes) {
+        return superficie/nombreAlumnes;
+    }
+
     public int getNombreDeTaules() {
         return nombreDeTaules;
     }
