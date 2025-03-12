@@ -1,21 +1,21 @@
-package Part3.ex4;
+package Part3.ex4.classes;
 
 public abstract class Foodstuff {
-    protected int id;
+    protected String id;
     protected String name;
     protected double price;
 
-    public Foodstuff(int id, String name, double price) {
+    public Foodstuff(String id, String name, double price) {
         this.id = id;
         this.name = name;
         this.price = price;
     }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 

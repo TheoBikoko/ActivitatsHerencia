@@ -1,5 +1,7 @@
 package Part3.ex4;
 
+import java.util.ArrayList;
+
 public interface Customizable {
-    void addIngredients();
+    void addIngredients(String ingredients);
 }

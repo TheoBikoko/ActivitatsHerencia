@@ -1,5 +1,9 @@
 package Part3.ex4;
 
+import Part3.ex4.classes.Foodstuff;
+import Part3.ex4.classes.Milkshake;
+import Part3.ex4.classes.Pizza;
+
 import java.util.ArrayList;
 
 public class OrderManager {
@@ -15,7 +19,7 @@ public class OrderManager {
 
     public void removeOrder(Foodstuff removedOrder) {
         for (Foodstuff order : orders) {
-            if (order.id == removedOrder.id) {orders.remove(removedOrder);}
+            if (order.getId().equals(removedOrder.getId())) {orders.remove(removedOrder);}
         }
     }
 
