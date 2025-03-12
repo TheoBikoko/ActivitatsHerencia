@@ -10,11 +10,7 @@ public class Biblioteca {
 
     public Biblioteca(int dimensio) {
         this.dimensio = dimensio;
-        fitxes = new ArrayList<>(100);
-    }
-
-    public Biblioteca() {
-        fitxes = new ArrayList<>(100);
+        fitxes = new ArrayList<>(dimensio);
     }
 
     public int getDimensio() {
@@ -38,7 +34,7 @@ public class Biblioteca {
         for (Fitxa fitxa : fitxes) {
             contadorFitxes++;
         }
-        return fitxes.size() - contadorFitxes;
+        return dimensio - fitxes.size();
     }
 
     public int nombreElements(){
@@ -52,12 +48,17 @@ public class Biblioteca {
     public void afegirFitxa(Fitxa novaFitxa){
         for (Fitxa fitxa : fitxes) {
             if (fitxa.getReferencia().equals(novaFitxa.getReferencia())){
-                System.out.println("Ja existeix una fitxa amb la mateixa referencia.");
+                System.out.println("\nJa existeix una fitxa amb la mateixa referencia.");
                 return;
             }
         }
-        fitxes.add(novaFitxa);
-        System.out.println("Fitxa afegida.");
+        if (capacitatBiblioteca() == 0){
+            System.out.println("\nLa biblioteca esta completa, no es poden afegir mes fitxes.");
+        }
+        else {
+            fitxes.add(novaFitxa);
+            System.out.println("\nFitxa afegida.");
+        }
     }
 
     public Fitxa extreureFitxaAmbReferencia(String referencia){
@@ -72,14 +73,14 @@ public class Biblioteca {
     public Fitxa extreureFitxaAmbPosicio(int posicio){
 
         if (posicio >= fitxes.size() || posicio < 0){
-            throw new ArrayIndexOutOfBoundsException("La posicio indicada no es troba dins la biblioteca");
+            throw new ArrayIndexOutOfBoundsException("\nLa posicio indicada no es troba dins la biblioteca, actualment pot escollir des de la posicio 0 fins la " + (fitxes.size() - 1) + ".");
         }
         return fitxes.get(posicio);
     }
 
     public void visualitzarContingut(){
         for (Fitxa fitxa: fitxes){
-            System.out.println(fitxa);
+            System.out.println("\n" + fitxa);
             }
     }
 }

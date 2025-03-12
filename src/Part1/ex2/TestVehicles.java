@@ -4,7 +4,7 @@ import Part1.ex2.classes.*;
 
 import java.util.Scanner;
 
-public class ProgramaPrincipal {
+public class TestVehicles {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         boolean execucio = true;

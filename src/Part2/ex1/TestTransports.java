@@ -7,13 +7,13 @@ import Part2.ex1.classes.Transport;
 
 import java.util.ArrayList;
 
-public class Test {
+public class TestTransports {
     public static void main(String[] args) {
         ArrayList<Transport> transports = new ArrayList<>();
 
-        Cotxe cotxe = new Cotxe(1,65.34,"Gasolina", 1.94f, 1.21f);
+        Cotxe cotxe = new Cotxe(1,65.34,"Gasolina", 1.50f, 0.5f);
         Bicicleta bicicleta = new Bicicleta(2,20.43,6);
-        Metro metro = new Metro(3,324.54, 5.43f);
+        Metro metro = new Metro(3,324.54, 5.5f);
 
         transports.add(cotxe);
         transports.add(bicicleta);

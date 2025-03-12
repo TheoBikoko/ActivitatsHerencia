@@ -4,7 +4,7 @@ import Part1.ex6.classes.Comercial;
 import Part1.ex6.classes.Empleat;
 import Part1.ex6.classes.Repartidor;
 
-public class TestClasses {
+public class TestEmpleats {
     public static void main(String[] args) {
         Empleat empleat = new Empleat("Theo", "Bikoko Pineda", 27, 1200);
         Repartidor repartidor = new Repartidor("","", 77, 1320.56, "Gracia");

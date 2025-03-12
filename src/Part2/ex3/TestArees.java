@@ -4,7 +4,7 @@ import Part2.ex3.classes.*;
 
 import java.util.ArrayList;
 
-public class Test {
+public class TestArees {
     public static void main(String[] args) {
         ArrayList<Espai> espais = new ArrayList<>();
 
@@ -34,6 +34,4 @@ public class Test {
             }
         }
     }
-
-
 }

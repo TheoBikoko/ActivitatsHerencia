@@ -5,6 +5,7 @@ import Part3.ex4.classes.Milkshake;
 import Part3.ex4.classes.Pizza;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class OrderManager {
     ArrayList<Foodstuff> orders;
@@ -18,8 +19,12 @@ public class OrderManager {
     }
 
     public void removeOrder(Foodstuff removedOrder) {
+
         for (Foodstuff order : orders) {
-            if (order.getId().equals(removedOrder.getId())) {orders.remove(removedOrder);}
+            if (order.getId() == removedOrder.getId()) {
+                orders.remove(removedOrder);
+                break;
+            }
         }
     }
 

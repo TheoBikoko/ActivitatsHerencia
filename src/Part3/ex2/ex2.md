@@ -1,0 +1,1 @@
+![img.png](../../../img/enunciatEx1.png)

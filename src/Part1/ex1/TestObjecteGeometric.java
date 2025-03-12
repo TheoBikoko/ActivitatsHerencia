@@ -5,7 +5,7 @@ import Part1.ex1.classes.Quadrat;
 
 import java.util.Scanner;
 
-public class ProgramaPrincipal {
+public class TestObjecteGeometric {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
         boolean execucio = true;

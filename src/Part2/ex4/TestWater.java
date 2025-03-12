@@ -7,7 +7,7 @@ import Part2.ex4.classes.FacturaClientNormal;
 
 import java.util.ArrayList;
 
-public class Test {
+public class TestWater {
     public static void main(String[] args) {
         ArrayList<Factura> factures = new ArrayList<>();
 

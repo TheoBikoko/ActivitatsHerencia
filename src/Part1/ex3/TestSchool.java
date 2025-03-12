@@ -5,7 +5,7 @@ import Part1.ex3.classes.Person;
 import Part1.ex3.classes.Student;
 import Part1.ex3.classes.Teacher;
 
-public class ProgramaPrincipal {
+public class TestSchool {
     public static void main(String[] args) {
         System.out.println("\nInstanciant objecte de classe Person...");
         Person person = new Person("Theo", "Dr. Trueta 206");

@@ -6,11 +6,11 @@ import Part2.ex2.classes.Planta;
 
 import java.util.ArrayList;
 
-public class Test {
+public class TestAquarium {
     public static void main(String[] args) {
         ArrayList<Organisme> organismes = new ArrayList<>();
 
-        Planta planta = new Planta("Vincent from the Woods", "Acanthaceae", "M", 30.4, 10.4, 12.4, 7.1, "R");
+        Planta planta = new Planta("Vincent", "Acanthaceae", "M", 30.4, 10.4, 12.4, 7.1, "R");
         Peix peix = new Peix("LeBron James", "Congridae", "L", 47.65, 21.57, 8, 4, "Tanzania", "O", 23.14);
         Planta planta2 = new Planta("Goku", "Bonsai", "H", 24.43, 9.23, 9.5, 6.8, "S");
         Peix peix2 = new Peix("Luka Doncic", "Lutjanidae", "M", 86.21, 2.14, 12, 7, "Zimbabwe", "L", 12.58);

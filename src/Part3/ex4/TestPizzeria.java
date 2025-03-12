@@ -6,14 +6,14 @@ import Part3.ex4.classes.Milkshake;
 import Part3.ex4.classes.Pizza;
 import java.util.ArrayList;
 
-public class Test {
+public class TestPizzeria {
     public static void main(String[] args) {
         OrderManager manager = new OrderManager();
 
-        Burger burger = new Burger("1", "Poblenou Double Bacon Cheeseburger", 12.99, "Beef meat");
-        Drink drink = new Drink("2", "Poblerade", 5.15);
-        Milkshake milkshake = new Milkshake("3", "Pobleshake", 9.57, "Almond milk");
-        Pizza pizza = new Pizza("4", "Pobleninni Diavola", 14.69, "Large");
+        Burger burger = new Burger(1, "Poblenou Double Bacon Cheeseburger", 12.99, "Beef meat");
+        Drink drink = new Drink(2, "Poblerade", 5.15);
+        Milkshake milkshake = new Milkshake(3, "Pobleshake", 9.57, "Almond milk");
+        Pizza pizza = new Pizza(4, "Pobleninni Diavola", 14.69, "Large");
 
         manager.addOrder(burger);
         manager.addOrder(drink);
@@ -21,6 +21,12 @@ public class Test {
         manager.addOrder(pizza);
 
         System.out.println("List of orders: ");
+        manager.showOrders();
+
+        manager.removeOrder(burger);
+        manager.removeOrder(drink);
+
+        System.out.println("\nList of orders: ");
         manager.showOrders();
         System.out.println("\nOrders that can be customized: " + manager.showCustomizableOrders());
 
@@ -33,6 +39,7 @@ public class Test {
         pizza.setIngredients(pobleninniIngredients);
         pizza.addIngredients("Pineapple");
         pizza.addIngredients("Olives");
+        pizza.addIngredients("Anchovies");
 
         ArrayList<String> pobleshakeIngredients = new ArrayList<>();
         pobleshakeIngredients.add("Whipped Cream");
@@ -41,10 +48,11 @@ public class Test {
 
         milkshake.setIngredients(pobleshakeIngredients);
         milkshake.addIngredients("Strawberry");
-        milkshake.addIngredients("Olives");
+        milkshake.addIngredients("Mint");
+        milkshake.addIngredients("Chocolate syrup");
 
-        System.out.println("Poblenini ingredients: " + pizza.getIngredients());
-        System.out.println("Pobleshake ingredients: " + milkshake.getIngredients());
+        System.out.println("\nPoblenini ingredients: " + pizza.getIngredients());
+        System.out.println("\nPobleshake ingredients: " + milkshake.getIngredients());
 
 
     }

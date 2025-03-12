@@ -2,7 +2,7 @@ package Part3.ex4.classes;
 
 public class Drink extends Foodstuff{
 
-    public Drink(String id, String name, double price) {
+    public Drink(int id, String name, double price) {
         super(id, name, price);
     }
 

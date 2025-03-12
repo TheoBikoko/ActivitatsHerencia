@@ -8,7 +8,7 @@ public class Pizza extends Foodstuff implements Customizable {
     private String size;
     ArrayList<String> ingredients;
 
-    public Pizza(String id, String name, double price, String size) {
+    public Pizza(int id, String name, double price, String size) {
         super(id, name, price);
         this.size = size;
         ingredients = new ArrayList<>();
@@ -16,7 +16,11 @@ public class Pizza extends Foodstuff implements Customizable {
 
     @Override
     public void addIngredients(String ingredient) {
-        ingredients.add(ingredient);
+        if (ingredient.contains("cheese") || ingredient.equalsIgnoreCase("Spicy sauce")|| ingredient.equalsIgnoreCase("Anchovies")){
+            ingredients.add(ingredient);
+            System.out.println("\nThe ingredient " + ingredient + " has been added to the pizza.");
+        }
+        else System.out.println("\nThe ingredient " + ingredient + " cannot be added to a pizza.");;
     }
 
     public String getSize() {

@@ -8,7 +8,7 @@ public class Milkshake extends Drink implements Customizable {
     private String milkType;
     ArrayList<String> ingredients;
 
-    public Milkshake(String id, String name, double price, String milkType) {
+    public Milkshake(int id, String name, double price, String milkType) {
         super(id, name, price);
         this.milkType = milkType;
         ingredients = new ArrayList<>();
@@ -16,7 +16,11 @@ public class Milkshake extends Drink implements Customizable {
 
     @Override
     public void addIngredients(String ingredient) {
-        ingredients.add(ingredient);
+        if (ingredient.contains("berry") || ingredient.equalsIgnoreCase("Mint")|| ingredient.equalsIgnoreCase("Cookies")){
+            ingredients.add(ingredient);
+            System.out.println("\nThe ingredient " + ingredient + " has been added to the milkshake.");
+        }
+        else System.out.println("\nThe ingredient " + ingredient + " cannot be added to a milkshake.");
     }
 
     public String getMilkType() {

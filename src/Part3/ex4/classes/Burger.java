@@ -3,7 +3,7 @@ package Part3.ex4.classes;
 public class Burger extends Foodstuff{
     private String type;
 
-    public Burger(String id, String name, double price, String type) {
+    public Burger(int id, String name, double price, String type) {
         super(id, name, price);
         this.type = type;
     }

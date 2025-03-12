@@ -8,9 +8,7 @@ import Part1.ex4.biblioteca.Volum;
 public class NovaBiblioteca {
 
     public static void main(String[] args) {
-        Biblioteca biblioteca = new Biblioteca();
-
-        System.out.println(biblioteca.getFitxes().size());
+        Biblioteca biblioteca = new Biblioteca(100);
 
         Fitxa fitxa = new Fitxa("879725","La Biblia de Poblenou");
         Fitxa fitxa2 = new Fitxa("879725","Michael Jordan or LeBron James: GOAT Debate");
@@ -24,21 +22,27 @@ public class NovaBiblioteca {
         biblioteca.afegirFitxa(volum);
         biblioteca.afegirFitxa(revista);
 
-        System.out.println("Actualment, la biblioteca disposa de " + biblioteca.nombreElements() + (" elements."));
+        System.out.println("\nActualment, la biblioteca disposa de " + biblioteca.nombreElements() + (" elements."));
 
-        System.out.println("Actualment, la biblioteca te una capacitat de " + biblioteca.capacitatBiblioteca() + (" elements per a afegir"));
+        System.out.println("\nActualment, la biblioteca te una capacitat de " + biblioteca.capacitatBiblioteca() + (" elements per a afegir."));
 
         biblioteca.visualitzarContingut();
 
         System.out.println(biblioteca.extreureFitxaAmbReferencia("ASDASD"));
+        System.out.println();
         System.out.println(biblioteca.extreureFitxaAmbReferencia("ASDASD1"));
+        System.out.println();
         System.out.println(biblioteca.extreureFitxaAmbReferencia("ASDASD2"));
+        System.out.println();
 
         System.out.println(biblioteca.extreureFitxaAmbPosicio(0));
+        System.out.println();
         System.out.println(biblioteca.extreureFitxaAmbPosicio(1));
+        System.out.println();
         System.out.println(biblioteca.extreureFitxaAmbPosicio(3));
+        System.out.println();
         System.out.println(biblioteca.extreureFitxaAmbPosicio(8));
+        System.out.println();
         System.out.println(biblioteca.extreureFitxaAmbPosicio(-7));
-
     }
 }
