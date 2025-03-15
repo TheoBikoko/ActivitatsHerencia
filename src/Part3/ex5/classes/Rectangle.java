@@ -3,7 +3,7 @@ package Part3.ex5.classes;
 import Part3.ex5.interficies.Calculs2D;
 
 public final class Rectangle extends Figura2D implements Calculs2D {
-    private Double base;
+    private double base;
     private double altura;
 
     public Rectangle(int idFigura, double base, double altura) {
@@ -20,11 +20,11 @@ public final class Rectangle extends Figura2D implements Calculs2D {
         return base * altura;
     }
 
-    public Double getBase() {
+    public double getBase() {
         return base;
     }
 
-    public void setBase(Double base) {
+    public void setBase(double base) {
         this.base = base;
     }
 

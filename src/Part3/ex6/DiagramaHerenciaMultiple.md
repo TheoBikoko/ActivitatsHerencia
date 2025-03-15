@@ -13,8 +13,10 @@ El diagrama inicial era el següent:
 
 ![img.png](../../../img/DiagramaDiamant.png)
 
-El diagrama amb les modificacions és el següent:
+El diagrama ideat per a la solució és el següent:
 
-![img.jpg](../../../img/DiagramaHerenciaMultiple.jpg)
+![Llegenda.png](../../../img/Llegenda.png)
 
-S'ha creat la classe TestHerenciaMultiple per a comprovar que la solucio mencionada funciona correctament.
+![img.jpg](../../../img/DiagramaHerenciaMultiple.png)
+
+S'ha creat la classe TestHerenciaMultiple per a comprovar que la solució mencionada funciona correctament.

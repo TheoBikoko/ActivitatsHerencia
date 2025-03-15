@@ -3,7 +3,7 @@ package Part3.ex3;
 import Part3.ex3.classes.Llibre;
 import Part3.ex3.classes.Revista;
 
-public class Test {
+public class TestLibrarySystem {
     public static void main(String[] args) {
         Llibre llibre = new Llibre(1, "Harry Potter", "1997");
         Revista revista = new Revista(2, "Poblenou Magazine", "2024", 1);

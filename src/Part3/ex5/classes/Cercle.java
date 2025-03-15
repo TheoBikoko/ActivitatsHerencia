@@ -1,9 +1,8 @@
 package Part3.ex5.classes;
 
-import Part3.ex5.interficies.Calculs2D;
 import Part3.ex5.interficies.Constants;
 
-public final class Cercle extends Figura2D implements Calculs2D, Constants {
+public final class Cercle extends Figura2D implements Constants {
     private double radi;
 
     public Cercle(int idFigura, double radi) {

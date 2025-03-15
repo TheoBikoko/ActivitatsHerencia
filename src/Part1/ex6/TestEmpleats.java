@@ -9,14 +9,15 @@ public class TestEmpleats {
         Empleat empleat = new Empleat("Theo", "Bikoko Pineda", 27, 1200);
         Repartidor repartidor = new Repartidor("","", 77, 1320.56, "Gracia");
         Repartidor repartidor2 = new Repartidor("Joan","Escobar", 15, 890, "Ciutat Vella");
-        Comercial comercial = new Comercial("Hector", "Soria", 41, 1546.78, 12.5f);
-        Comercial comercial2 = new Comercial("Hector", "Soria", 20, 452.36, 33.3f);
+        Comercial comercial = new Comercial("Hector", "Soria", 41, 1546.78, 10f);
+        Comercial comercial2 = new Comercial("Hector", "Soria", 20, 452.36, 30f);
 
         System.out.println(empleat.equals(repartidor));
         System.out.println(repartidor2.equals(comercial2) + "\n");
         System.out.println(repartidor.comprovaNom());
         System.out.println(comercial2.comprovaNom() + "\n");
-        System.out.println(comercial2.comissioVenta(1326.452f));
+        System.out.println(comercial.comissioVenta(13000f));
+        System.out.println(comercial2.comissioVenta(13000f));
         System.out.println(empleat.getClass());
         System.out.println(repartidor.getClass());
         System.out.println(comercial.getClass() + "\n");

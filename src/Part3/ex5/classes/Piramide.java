@@ -1,8 +1,6 @@
 package Part3.ex5.classes;
 
-import Part3.ex5.interficies.Calculs3D;
-
-public final class Piramide extends Figura3D implements Calculs3D {
+public final class Piramide extends Figura3D {
     private double base;
     private double altura;
 
@@ -25,6 +23,22 @@ public final class Piramide extends Figura3D implements Calculs3D {
     @Override
     public double volum() {
         return base*base*altura/3;
+    }
+
+    public double getBase() {
+        return base;
+    }
+
+    public void setBase(double base) {
+        this.base = base;
+    }
+
+    public double getAltura() {
+        return altura;
+    }
+
+    public void setAltura(double altura) {
+        this.altura = altura;
     }
 
     @Override

@@ -61,8 +61,7 @@ public  class Empleat{
     }
 
     public boolean comprovaNom(){
-        if (nom.isEmpty()){return false;}
-        return true;
+        return !nom.isEmpty();
     }
 
     @Override
